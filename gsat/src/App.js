@@ -1,24 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
-
+import SignIn from './components/auth/Signin';
+import SignUp from './components/auth/Signup';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="split-container">
+      <div className="half-page">
+        <SignIn></SignIn>
+      </div>
+    <div className="half-page">
+        <div className='right-side'></div>
     </div>
+  </div>
   );
 }
 
